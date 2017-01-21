@@ -22,7 +22,7 @@ already = os.listdir("./")
 if 'datefile' in already:
     date_old = open("./datefile",mode='r',encoding='utf-8')
     datefile = date_old.read()
-    data_old.close()
+    date_old.close()
     if len(datefile) < len(date):
         date = date[len(datefile):]
         date_old = open("./datefile",mode="a",encoding='utf-8')
